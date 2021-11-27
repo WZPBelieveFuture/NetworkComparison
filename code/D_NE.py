@@ -27,6 +27,7 @@ parser.add_argument('--L', type=int, default=10,
                     help='length of bin size')
 args = parser.parse_args()
 
+# calculate Jensen-Shannon divergence of the node Euclidean distance distribution
 def JS(distribution_matrix, pdfm, number):
     sum1 = 0
     for i in range(number):
@@ -59,7 +60,7 @@ def Cal_Nodedistance(node_embedding, number):
             if (j > i):
                 node_distance_matrix[i][j] = node_distance_matrix[j][i] = np.linalg.norm(node_embedding[i] - node_embedding[j])
     return node_distance_matrix
-    
+
 # calculate node distribution
 def Cal_Eachnode_Distribution(idx, distance_array, bin_length, bin_list, number):
     node_distribution = [0] * bin_length
@@ -116,7 +117,6 @@ def Construct_Network(path, flag):
     else:
         args.network2_size = network_size
     return g
-
 
 if __name__ == '__main__':
 
