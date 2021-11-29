@@ -3,10 +3,9 @@
 ## About
 A embedding based network comparison method, named D_NE, which considers the global structural information. In detail, we calculate the distance between nodes through the vector extracted by DeepWalk and quantify the network dissimilarity by spectral entropy based Jensen-Shannon divergences of the distribution of the node distances. 
 
-For more details, please refer to our paper:
+For more details, please refer the following paper:
 
-> Zhipeng Wang , Xiu-Xiu Zhan , Chuang Liu , Zi-Ke Zhang: Quantifification of network structural dissimilarities based on graph embedding. [\[PDF\]](http://arxiv.org/abs/2111.13114)
-
+> Zhipeng Wang, Xiu-Xiu Zhan, Chuang Liu, Zi-Ke Zhang: Quantifification of network structural dissimilarities based on graph embedding. arXiv preprint: 2111.13114
 
 ## About file 
 
